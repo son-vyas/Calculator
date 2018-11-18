@@ -23,16 +23,17 @@ while flag:
          if index == x-1:
              if value == '+':
                  res=c.add()
-                 flag=False
 
              elif value == '-':
                  res=c.sub()
-                 flag=False
 
              elif value == '*':
                  res=c.mul()
-                 flag=False
+
              elif value == '/':
                  res=c.div()
-                 flag=False
-print res
+
+         elif index not in range(1,5):
+            flag = False
+
+    print res
